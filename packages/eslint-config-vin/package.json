@@ -1,6 +1,6 @@
 {
   "name": "@vinswap/eslint-config-vin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Eslint config for VinSwap",
   "main": "lib/index.js",
   "files": [
