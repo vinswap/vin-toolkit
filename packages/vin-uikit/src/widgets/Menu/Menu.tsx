@@ -122,6 +122,7 @@ const Menu: React.FC<NavProps> = ({
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
           isDark={isDark}
           href={homeLink?.href ?? "/"}
+          // Customize logo
           customElement={customElement}
         />
         <Flex>
