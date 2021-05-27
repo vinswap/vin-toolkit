@@ -1,4 +1,4 @@
-48 error Error: Command failed with exit code 1: git commit -F /private/var/folders/y2/hrm13sxx6fg084xgp2_tky9w0000gn/T/91a22cb1-2d00-41ac-931e-414e3a425827/lerna-commit.txt
+48 error Error: Command failed with exit code 1: git commit -F /private/var/folders/y2/hrm13sxx6fg084xgp2_tky9w0000gn/T/f27466b9-c45d-494d-b28c-d245ac99e705/lerna-commit.txt
 48 error husky > pre-commit (node v14.15.1)
 48 error $ lerna run format:check
 48 error lerna notice cli v4.0.0
