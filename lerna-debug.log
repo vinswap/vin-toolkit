@@ -1,20 +1,22 @@
-48 error Error: Command failed with exit code 1: git commit -F /private/var/folders/y2/hrm13sxx6fg084xgp2_tky9w0000gn/T/f27466b9-c45d-494d-b28c-d245ac99e705/lerna-commit.txt
-48 error husky > pre-commit (node v14.15.1)
-48 error $ lerna run format:check
-48 error lerna notice cli v4.0.0
-48 error lerna info versioning independent
-48 error lerna info Executing command in 1 package: "yarn run format:check"
-48 error lerna ERR! yarn run format:check exited 1 in '@vinswap/uikit'
-48 error lerna ERR! yarn run format:check stdout:
-48 error $ prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'
-48 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-48 error lerna ERR! yarn run format:check stderr:
-48 error error Command failed with exit code 1.
-48 error lerna ERR! yarn run format:check exited 1 in '@vinswap/uikit'
-48 error error Command failed with exit code 1.
-48 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-48 error husky > pre-commit hook failed (add --no-verify to bypass)
-48 error     at makeError (/Users/apple/Desktop/Dev/vin-toolkit/node_modules/execa/lib/error.js:59:11)
-48 error     at handlePromise (/Users/apple/Desktop/Dev/vin-toolkit/node_modules/execa/index.js:114:26)
-48 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-48 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath C:\Users\HuyTran\Documents\demo\vin-toolkit
+3 info versioning independent
+4 error JSONError: Unexpected token "<" (0x3C) in JSON at position 32 while parsing near "... \"@vinswap/uikit\",\r\n<<<<<<< HEAD\r\n  \"ver..." in packages\vin-uikit\package.json
+4 error
+4 error   1 | {
+4 error   2 |   "name": "@vinswap/uikit",
+4 error > 3 | <<<<<<< HEAD
+4 error     | ^
+4 error   4 |   "version": "0.0.4",
+4 error   5 | =======
+4 error   6 |   "version": "0.0.2",
+4 error
+4 error     at parseJson (C:\Users\HuyTran\Documents\demo\vin-toolkit\node_modules\parse-json\index.js:29:21)
+4 error     at parse (C:\Users\HuyTran\Documents\demo\vin-toolkit\node_modules\load-json-file\index.js:15:9)
+4 error     at module.exports (C:\Users\HuyTran\Documents\demo\vin-toolkit\node_modules\load-json-file\index.js:18:47)
