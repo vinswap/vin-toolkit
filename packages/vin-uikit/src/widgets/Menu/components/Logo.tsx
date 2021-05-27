@@ -11,6 +11,7 @@ interface Props {
   isDark: boolean;
   togglePush: () => void;
   href: string;
+  customElement?:any
 }
 
 const blink = keyframes`
@@ -48,7 +49,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
+const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href, customElement}) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
@@ -68,11 +69,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Pancake home page">
-          {innerLogo}
+          {customElement?customElement:innerLogo}
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="Pancake home page">
-          {innerLogo}
+          {customElement?customElement:innerLogo}
         </StyledLink>
       )}
     </Flex>
