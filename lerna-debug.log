@@ -1,0 +1,20 @@
+48 error Error: Command failed with exit code 1: git commit -F /private/var/folders/y2/hrm13sxx6fg084xgp2_tky9w0000gn/T/91a22cb1-2d00-41ac-931e-414e3a425827/lerna-commit.txt
+48 error husky > pre-commit (node v14.15.1)
+48 error $ lerna run format:check
+48 error lerna notice cli v4.0.0
+48 error lerna info versioning independent
+48 error lerna info Executing command in 1 package: "yarn run format:check"
+48 error lerna ERR! yarn run format:check exited 1 in '@vinswap/uikit'
+48 error lerna ERR! yarn run format:check stdout:
+48 error $ prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'
+48 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+48 error lerna ERR! yarn run format:check stderr:
+48 error error Command failed with exit code 1.
+48 error lerna ERR! yarn run format:check exited 1 in '@vinswap/uikit'
+48 error error Command failed with exit code 1.
+48 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+48 error husky > pre-commit hook failed (add --no-verify to bypass)
+48 error     at makeError (/Users/apple/Desktop/Dev/vin-toolkit/node_modules/execa/lib/error.js:59:11)
+48 error     at handlePromise (/Users/apple/Desktop/Dev/vin-toolkit/node_modules/execa/index.js:114:26)
+48 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+48 error     at async Promise.all (index 0)
