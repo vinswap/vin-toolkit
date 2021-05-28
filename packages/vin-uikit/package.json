@@ -1,5 +1,5 @@
 {
-  "name": "@vinswap/uikit",
+  "name": "@pancakeswap/uikit",
   "version": "0.0.3",
   "description": "Set of UI components for vinswap projects",
   "main": "dist/index.cjs.js",
