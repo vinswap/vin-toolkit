@@ -8,7 +8,7 @@ coverage
 
 # production
 storybook-static
-
+.story-book
 # misc
 .DS_Store
 
